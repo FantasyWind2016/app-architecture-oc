@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C2E3B52121589CB60071A347 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3B52021589CB60071A347 /* AppDelegate.m */; };
-		C2E3B52421589CB60071A347 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3B52321589CB60071A347 /* MasterViewController.m */; };
-		C2E3B52721589CB60071A347 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3B52621589CB60071A347 /* DetailViewController.m */; };
 		C2E3B52A21589CB60071A347 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E3B52821589CB60071A347 /* Main.storyboard */; };
 		C2E3B52C21589CBB0071A347 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E3B52B21589CBB0071A347 /* Assets.xcassets */; };
 		C2E3B52F21589CBB0071A347 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E3B52D21589CBB0071A347 /* LaunchScreen.storyboard */; };
 		C2E3B53221589CBB0071A347 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3B53121589CBB0071A347 /* main.m */; };
 		C2E3B53C21589CBB0071A347 /* RecordingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3B53B21589CBB0071A347 /* RecordingsTests.m */; };
 		C2E3B54721589CBB0071A347 /* RecordingsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3B54621589CBB0071A347 /* RecordingsUITests.m */; };
+		C2E3B5592158B5B40071A347 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3B5572158B5B40071A347 /* AppDelegate.m */; };
+		C2E3B55C2158B7910071A347 /* AAOFolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3B55B2158B7910071A347 /* AAOFolderViewController.m */; };
+		C2E3B55F2158B85E0071A347 /* AAOPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3B55E2158B85E0071A347 /* AAOPlayViewController.m */; };
+		C2E3B5622158B8780071A347 /* AAORecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3B5612158B8780071A347 /* AAORecordViewController.m */; };
+		C2E3B5652158BB3A0071A347 /* AAORecording.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3B5642158BB3A0071A347 /* AAORecording.m */; };
+		C2E3B5682158BC0A0071A347 /* AAOStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3B5672158BC0A0071A347 /* AAOStore.m */; };
+		C2E3B56B2158C0670071A347 /* AAOFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3B56A2158C0670071A347 /* AAOFolder.m */; };
+		C2E3B56E2158CBDB0071A347 /* AAOItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3B56D2158CBDB0071A347 /* AAOItem.m */; };
+		C2E3B571215900370071A347 /* AAORecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3B570215900370071A347 /* AAORecorder.m */; };
+		C2E3B5742159004C0071A347 /* AAOPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3B5732159004C0071A347 /* AAOPlayer.m */; };
+		C2E3B577215900620071A347 /* AAOUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E3B576215900620071A347 /* AAOUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +45,6 @@
 
 /* Begin PBXFileReference section */
 		C2E3B51C21589CB60071A347 /* Recordings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recordings.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2E3B51F21589CB60071A347 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C2E3B52021589CB60071A347 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C2E3B52221589CB60071A347 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		C2E3B52321589CB60071A347 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		C2E3B52521589CB60071A347 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		C2E3B52621589CB60071A347 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		C2E3B52921589CB60071A347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2E3B52B21589CBB0071A347 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2E3B52E21589CBB0071A347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +56,28 @@
 		C2E3B54221589CBB0071A347 /* RecordingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecordingsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E3B54621589CBB0071A347 /* RecordingsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordingsUITests.m; sourceTree = "<group>"; };
 		C2E3B54821589CBB0071A347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2E3B5562158B5B40071A347 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C2E3B5572158B5B40071A347 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C2E3B55A2158B7910071A347 /* AAOFolderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAOFolderViewController.h; sourceTree = "<group>"; };
+		C2E3B55B2158B7910071A347 /* AAOFolderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAOFolderViewController.m; sourceTree = "<group>"; };
+		C2E3B55D2158B85E0071A347 /* AAOPlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAOPlayViewController.h; sourceTree = "<group>"; };
+		C2E3B55E2158B85E0071A347 /* AAOPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAOPlayViewController.m; sourceTree = "<group>"; };
+		C2E3B5602158B8780071A347 /* AAORecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAORecordViewController.h; sourceTree = "<group>"; };
+		C2E3B5612158B8780071A347 /* AAORecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAORecordViewController.m; sourceTree = "<group>"; };
+		C2E3B5632158BB3A0071A347 /* AAORecording.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAORecording.h; sourceTree = "<group>"; };
+		C2E3B5642158BB3A0071A347 /* AAORecording.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAORecording.m; sourceTree = "<group>"; };
+		C2E3B5662158BC0A0071A347 /* AAOStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAOStore.h; sourceTree = "<group>"; };
+		C2E3B5672158BC0A0071A347 /* AAOStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAOStore.m; sourceTree = "<group>"; };
+		C2E3B5692158C0670071A347 /* AAOFolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAOFolder.h; sourceTree = "<group>"; };
+		C2E3B56A2158C0670071A347 /* AAOFolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAOFolder.m; sourceTree = "<group>"; };
+		C2E3B56C2158CBDB0071A347 /* AAOItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAOItem.h; sourceTree = "<group>"; };
+		C2E3B56D2158CBDB0071A347 /* AAOItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAOItem.m; sourceTree = "<group>"; };
+		C2E3B56F215900370071A347 /* AAORecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAORecorder.h; sourceTree = "<group>"; };
+		C2E3B570215900370071A347 /* AAORecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAORecorder.m; sourceTree = "<group>"; };
+		C2E3B5722159004C0071A347 /* AAOPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAOPlayer.h; sourceTree = "<group>"; };
+		C2E3B5732159004C0071A347 /* AAOPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAOPlayer.m; sourceTree = "<group>"; };
+		C2E3B575215900620071A347 /* AAOUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAOUtil.h; sourceTree = "<group>"; };
+		C2E3B576215900620071A347 /* AAOUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAOUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +128,9 @@
 		C2E3B51E21589CB60071A347 /* Recordings */ = {
 			isa = PBXGroup;
 			children = (
-				C2E3B51F21589CB60071A347 /* AppDelegate.h */,
-				C2E3B52021589CB60071A347 /* AppDelegate.m */,
-				C2E3B52221589CB60071A347 /* MasterViewController.h */,
-				C2E3B52321589CB60071A347 /* MasterViewController.m */,
-				C2E3B52521589CB60071A347 /* DetailViewController.h */,
-				C2E3B52621589CB60071A347 /* DetailViewController.m */,
+				C2E3B5552158B5B40071A347 /* App+Views */,
+				C2E3B5582158B5B40071A347 /* Helpers */,
+				C2E3B5542158B5B40071A347 /* Model */,
 				C2E3B52821589CB60071A347 /* Main.storyboard */,
 				C2E3B52B21589CBB0071A347 /* Assets.xcassets */,
 				C2E3B52D21589CBB0071A347 /* LaunchScreen.storyboard */,
@@ -135,6 +156,49 @@
 				C2E3B54821589CBB0071A347 /* Info.plist */,
 			);
 			path = RecordingsUITests;
+			sourceTree = "<group>";
+		};
+		C2E3B5542158B5B40071A347 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2E3B5632158BB3A0071A347 /* AAORecording.h */,
+				C2E3B5642158BB3A0071A347 /* AAORecording.m */,
+				C2E3B5662158BC0A0071A347 /* AAOStore.h */,
+				C2E3B5672158BC0A0071A347 /* AAOStore.m */,
+				C2E3B5692158C0670071A347 /* AAOFolder.h */,
+				C2E3B56A2158C0670071A347 /* AAOFolder.m */,
+				C2E3B56C2158CBDB0071A347 /* AAOItem.h */,
+				C2E3B56D2158CBDB0071A347 /* AAOItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2E3B5552158B5B40071A347 /* App+Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2E3B5562158B5B40071A347 /* AppDelegate.h */,
+				C2E3B5572158B5B40071A347 /* AppDelegate.m */,
+				C2E3B55A2158B7910071A347 /* AAOFolderViewController.h */,
+				C2E3B55B2158B7910071A347 /* AAOFolderViewController.m */,
+				C2E3B55D2158B85E0071A347 /* AAOPlayViewController.h */,
+				C2E3B55E2158B85E0071A347 /* AAOPlayViewController.m */,
+				C2E3B5602158B8780071A347 /* AAORecordViewController.h */,
+				C2E3B5612158B8780071A347 /* AAORecordViewController.m */,
+			);
+			path = "App+Views";
+			sourceTree = "<group>";
+		};
+		C2E3B5582158B5B40071A347 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C2E3B56F215900370071A347 /* AAORecorder.h */,
+				C2E3B570215900370071A347 /* AAORecorder.m */,
+				C2E3B5722159004C0071A347 /* AAOPlayer.h */,
+				C2E3B5732159004C0071A347 /* AAOPlayer.m */,
+				C2E3B575215900620071A347 /* AAOUtil.h */,
+				C2E3B576215900620071A347 /* AAOUtil.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,10 +331,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2E3B52421589CB60071A347 /* MasterViewController.m in Sources */,
-				C2E3B52121589CB60071A347 /* AppDelegate.m in Sources */,
+				C2E3B55F2158B85E0071A347 /* AAOPlayViewController.m in Sources */,
+				C2E3B571215900370071A347 /* AAORecorder.m in Sources */,
+				C2E3B5652158BB3A0071A347 /* AAORecording.m in Sources */,
+				C2E3B5622158B8780071A347 /* AAORecordViewController.m in Sources */,
+				C2E3B56B2158C0670071A347 /* AAOFolder.m in Sources */,
+				C2E3B5592158B5B40071A347 /* AppDelegate.m in Sources */,
+				C2E3B5682158BC0A0071A347 /* AAOStore.m in Sources */,
+				C2E3B577215900620071A347 /* AAOUtil.m in Sources */,
+				C2E3B55C2158B7910071A347 /* AAOFolderViewController.m in Sources */,
+				C2E3B56E2158CBDB0071A347 /* AAOItem.m in Sources */,
 				C2E3B53221589CBB0071A347 /* main.m in Sources */,
-				C2E3B52721589CB60071A347 /* DetailViewController.m in Sources */,
+				C2E3B5742159004C0071A347 /* AAOPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
