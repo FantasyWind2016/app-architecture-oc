@@ -13,10 +13,10 @@
 @implementation AAOItem
 
 #pragma mark - public
-- (instancetype)initWithName:(NSString *)name uuid:(NSUUID *)uuid {
+- (instancetype)initWithName:(NSString *)name uuid:(NSString *)uuid {
     if (self=[super init]) {
         _name = name;
-        _uuid = uuid;
+        _uuid = [[NSUUID alloc] initWithUUIDString:uuid];
         _store = nil;
     }
     return self;
@@ -29,6 +29,7 @@
 
 - (NSDictionary *)encodeToDictionay {
     NSMutableDictionary *dict = [@{} mutableCopy];
+    [dict setValue:AAOFolderKeyTypeRecording forKey:AAOFolderKeyType];
     [dict setValue:self.name forKey:AAOFolderKeyName];
     [dict setValue:self.uuid forKey:AAOFolderKeyUUID];
     return [dict copy];

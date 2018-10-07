@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+@class AAOFolder;
 @interface AAOFolderViewController : UITableViewController
-
+@property (nonatomic, strong) AAOFolder *folder;
 @end

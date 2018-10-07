@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+@class AAOFolder;
 @interface AAORecordViewController : UIViewController
-
+@property (nonatomic, strong) AAOFolder *folder;
 @end

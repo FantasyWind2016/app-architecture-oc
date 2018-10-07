@@ -64,7 +64,7 @@
     return self.audioPlayer.isPlaying;
 }
 
-- (BOOL)isPause {
+- (BOOL)isPaused {
     return !self.audioPlayer.isPlaying && self.audioPlayer.currentTime > 0;
 }
 

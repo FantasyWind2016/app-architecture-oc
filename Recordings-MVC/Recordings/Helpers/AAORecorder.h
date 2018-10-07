@@ -11,4 +11,5 @@ typedef void (^AAORecorderUpdateBlock)(NSTimeInterval);
 
 @interface AAORecorder : NSObject
 - (instancetype)initWithURL:(NSURL *)url updateBlock:(AAORecorderUpdateBlock)updateBlock;
+- (void)stop;
 @end

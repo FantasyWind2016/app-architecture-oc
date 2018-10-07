@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vvG-tj-8ha">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -36,7 +36,7 @@
         <!--Player-->
         <scene sceneID="cHe-Ac-Oaq">
             <objects>
-                <viewController restorationIdentifier="playerController" storyboardIdentifier="playerController" title="Player" id="4lh-Z2-8Ee" customClass="AAOPlayViewController" customModule="Recordings" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="playerController" storyboardIdentifier="playerController" title="Player" id="4lh-Z2-8Ee" customClass="AAOPlayViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QCU-c4-23P"/>
                         <viewControllerLayoutGuide type="bottom" id="cu3-Vs-CTg"/>
@@ -103,7 +103,7 @@
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                         <color key="thumbTintColor" red="0.99773281810000003" green="0.65113133190000005" blue="0.0071014515119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
-                                                            <action selector="setProgress" destination="4lh-Z2-8Ee" eventType="valueChanged" id="1Rr-Ch-gMm"/>
+                                                            <action selector="setProgress:" destination="4lh-Z2-8Ee" eventType="valueChanged" id="kh4-aq-svz"/>
                                                         </connections>
                                                     </slider>
                                                 </subviews>
@@ -121,7 +121,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="play" destination="4lh-Z2-8Ee" eventType="touchUpInside" id="ehg-6N-vsZ"/>
+                                                    <action selector="play:" destination="4lh-Z2-8Ee" eventType="touchUpInside" id="UWb-Gx-jJh"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -141,13 +141,13 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detail" id="sNj-mf-Nt1"/>
                     <connections>
-                        <outlet property="activeItemElements" destination="66H-cv-zMm" id="Fyp-VK-IOx"/>
-                        <outlet property="durationLabel" destination="Tdb-dz-iHL" id="kMI-D2-Iem"/>
-                        <outlet property="nameTextField" destination="9Qx-iU-lwN" id="MIw-Ls-duI"/>
-                        <outlet property="noRecordingLabel" destination="pic-Rd-gut" id="i07-gH-POI"/>
-                        <outlet property="playButton" destination="nj5-fG-NyF" id="o6i-yJ-v4h"/>
-                        <outlet property="progressLabel" destination="Tm5-hK-CDz" id="Q0Q-ap-JPE"/>
-                        <outlet property="progressSlider" destination="LnP-Dn-AU9" id="0co-2v-Kwt"/>
+                        <outlet property="activeItemElements" destination="66H-cv-zMm" id="12h-VK-ofO"/>
+                        <outlet property="durationLabel" destination="Tdb-dz-iHL" id="hWe-eC-lYL"/>
+                        <outlet property="nameTextField" destination="9Qx-iU-lwN" id="SUc-fP-c0E"/>
+                        <outlet property="noRecordingLabel" destination="pic-Rd-gut" id="a6y-Nt-uTr"/>
+                        <outlet property="playButton" destination="nj5-fG-NyF" id="8lE-dc-H03"/>
+                        <outlet property="progressLabel" destination="Tm5-hK-CDz" id="cR2-mb-0Sf"/>
+                        <outlet property="progressSlider" destination="LnP-Dn-AU9" id="c4G-hr-gfI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZhM-2e-3Cc" sceneMemberID="firstResponder"/>
@@ -171,7 +171,7 @@
         <!--Folder-->
         <scene sceneID="bg9-oX-KxH">
             <objects>
-                <tableViewController restorationIdentifier="folderController" storyboardIdentifier="folderController" title="Folder" id="Z83-DU-eyN" customClass="AAOFolderViewController" customModule="Recordings" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="folderController" storyboardIdentifier="folderController" title="Folder" id="Z83-DU-eyN" customClass="AAOFolderViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="iun-7e-ldA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -230,12 +230,12 @@
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="Ct4-do-dg9">
                                 <connections>
-                                    <action selector="createNewRecording:" destination="Z83-DU-eyN" id="huj-Sh-MOc"/>
+                                    <action selector="createNewRecording:" destination="Z83-DU-eyN" id="23i-Iq-sye"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem systemItem="organize" id="zSh-8d-Inp">
                                 <connections>
-                                    <action selector="createNewFolder:" destination="Z83-DU-eyN" id="M2X-bR-Xzk"/>
+                                    <action selector="createNewFolder:" destination="Z83-DU-eyN" id="hRv-RM-0KT"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -252,7 +252,7 @@
         <!--Recording-->
         <scene sceneID="Aeu-fc-JdA">
             <objects>
-                <viewController title="Recording" id="6W4-OP-ipc" customClass="AAORecordViewController" customModule="Recordings" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Recording" id="6W4-OP-ipc" customClass="AAORecordViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wHX-Cf-oyj"/>
                         <viewControllerLayoutGuide type="bottom" id="4Rp-WR-Dei"/>
@@ -289,7 +289,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="stop:" destination="6W4-OP-ipc" eventType="touchUpInside" id="k3t-gR-MzK"/>
+                                            <action selector="stop:" destination="6W4-OP-ipc" eventType="touchUpInside" id="uhM-dA-W3c"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -305,8 +305,8 @@
                         <viewLayoutGuide key="safeArea" id="X81-rU-RqO"/>
                     </view>
                     <connections>
-                        <outlet property="stopButton" destination="VO1-DR-m4O" id="TFk-Gp-YQq"/>
-                        <outlet property="timeLabel" destination="JgP-yN-l5v" id="f94-BW-gW5"/>
+                        <outlet property="stopButton" destination="VO1-DR-m4O" id="2uX-DC-gbZ"/>
+                        <outlet property="timeLabel" destination="JgP-yN-l5v" id="tfd-aa-7wX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VVp-kl-HrZ" userLabel="First Responder" sceneMemberID="firstResponder"/>

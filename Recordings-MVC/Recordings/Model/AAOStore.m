@@ -15,7 +15,6 @@ static NSString * storeLocation = @"store.json";
 @interface AAOStore()
 @property (nonatomic, strong) NSURL *baseURL;
 @property (nonatomic, strong) NSURL *placeholder;
-@property (nonatomic, strong) AAOFolder *rootFolder;
 @end
 
 @implementation AAOStore
@@ -26,7 +25,7 @@ static NSString * storeLocation = @"store.json";
     static dispatch_once_t onceToken;
     static AAOStore *_store = nil;
     dispatch_once(&onceToken, ^{
-        _store = [[AAOStore new] initWithURL:[self documentDirectory]];
+        _store = [[AAOStore alloc] initWithURL:[self documentDirectory]];
     });
     return _store;
 }

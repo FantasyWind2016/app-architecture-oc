@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C29B3087216A33770008C3FD /* NSString+text.m in Sources */ = {isa = PBXBuildFile; fileRef = C29B3086216A33770008C3FD /* NSString+text.m */; };
+		C29B308A216A39710008C3FD /* UIViewController+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = C29B3089216A39710008C3FD /* UIViewController+Alert.m */; };
+		C29B308D216A3A060008C3FD /* NSString+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = C29B308C216A3A060008C3FD /* NSString+Alert.m */; };
 		C2E3B52A21589CB60071A347 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E3B52821589CB60071A347 /* Main.storyboard */; };
 		C2E3B52C21589CBB0071A347 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E3B52B21589CBB0071A347 /* Assets.xcassets */; };
 		C2E3B52F21589CBB0071A347 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E3B52D21589CBB0071A347 /* LaunchScreen.storyboard */; };
@@ -44,6 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C29B3085216A33770008C3FD /* NSString+text.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+text.h"; sourceTree = "<group>"; };
+		C29B3086216A33770008C3FD /* NSString+text.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+text.m"; sourceTree = "<group>"; };
+		C29B3088216A39710008C3FD /* UIViewController+Alert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Alert.h"; sourceTree = "<group>"; };
+		C29B3089216A39710008C3FD /* UIViewController+Alert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Alert.m"; sourceTree = "<group>"; };
+		C29B308B216A3A060008C3FD /* NSString+Alert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Alert.h"; sourceTree = "<group>"; };
+		C29B308C216A3A060008C3FD /* NSString+Alert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Alert.m"; sourceTree = "<group>"; };
 		C2E3B51C21589CB60071A347 /* Recordings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recordings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E3B52921589CB60071A347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2E3B52B21589CBB0071A347 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -184,6 +193,8 @@
 				C2E3B55E2158B85E0071A347 /* AAOPlayViewController.m */,
 				C2E3B5602158B8780071A347 /* AAORecordViewController.h */,
 				C2E3B5612158B8780071A347 /* AAORecordViewController.m */,
+				C29B3085216A33770008C3FD /* NSString+text.h */,
+				C29B3086216A33770008C3FD /* NSString+text.m */,
 			);
 			path = "App+Views";
 			sourceTree = "<group>";
@@ -197,6 +208,10 @@
 				C2E3B5732159004C0071A347 /* AAOPlayer.m */,
 				C2E3B575215900620071A347 /* AAOUtil.h */,
 				C2E3B576215900620071A347 /* AAOUtil.m */,
+				C29B3088216A39710008C3FD /* UIViewController+Alert.h */,
+				C29B3089216A39710008C3FD /* UIViewController+Alert.m */,
+				C29B308B216A3A060008C3FD /* NSString+Alert.h */,
+				C29B308C216A3A060008C3FD /* NSString+Alert.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -331,11 +346,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C29B3087216A33770008C3FD /* NSString+text.m in Sources */,
 				C2E3B55F2158B85E0071A347 /* AAOPlayViewController.m in Sources */,
 				C2E3B571215900370071A347 /* AAORecorder.m in Sources */,
 				C2E3B5652158BB3A0071A347 /* AAORecording.m in Sources */,
 				C2E3B5622158B8780071A347 /* AAORecordViewController.m in Sources */,
 				C2E3B56B2158C0670071A347 /* AAOFolder.m in Sources */,
+				C29B308D216A3A060008C3FD /* NSString+Alert.m in Sources */,
 				C2E3B5592158B5B40071A347 /* AppDelegate.m in Sources */,
 				C2E3B5682158BC0A0071A347 /* AAOStore.m in Sources */,
 				C2E3B577215900620071A347 /* AAOUtil.m in Sources */,
@@ -343,6 +360,7 @@
 				C2E3B56E2158CBDB0071A347 /* AAOItem.m in Sources */,
 				C2E3B53221589CBB0071A347 /* main.m in Sources */,
 				C2E3B5742159004C0071A347 /* AAOPlayer.m in Sources */,
+				C29B308A216A39710008C3FD /* UIViewController+Alert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

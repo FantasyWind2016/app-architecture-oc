@@ -15,4 +15,6 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
 - (NSDictionary *)encodeToDictionay;
 - (NSArray *)resortWithChangeItem:(AAOItem *)item;
+- (void)addItem:(AAOItem *)item;
+- (void)removeItem:(AAOItem *)item;
 @end

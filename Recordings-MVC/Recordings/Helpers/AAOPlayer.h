@@ -10,5 +10,10 @@
 typedef void (^AAOPlayerUpdateBlock)(NSTimeInterval);
 
 @interface AAOPlayer : NSObject
+@property (nonatomic, assign, readonly) NSTimeInterval duration;
+@property (nonatomic, assign, readonly) BOOL isPlaying;
+@property (nonatomic, assign, readonly) BOOL isPaused;
 - (instancetype)initWithURL:(NSURL *)url updateBlock:(AAOPlayerUpdateBlock)updateBlock;
+- (void)setProgress:(NSTimeInterval)time;
+- (void)togglePlay;
 @end

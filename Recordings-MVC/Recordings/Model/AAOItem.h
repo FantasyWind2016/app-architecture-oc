@@ -19,11 +19,16 @@ static NSString * const AAONotifyChangeReasonRemoved = @"removed";
 static NSString *AAOFolderKeyName = @"name";
 static NSString *AAOFolderKeyUUID = @"uuid";
 
+static NSString *AAOFolderKeyContents = @"contents";
+static NSString *AAOFolderKeyType = @"type";
+static NSString *AAOFolderKeyTypeFolder = @"folder";
+static NSString *AAOFolderKeyTypeRecording = @"recording";
+
 @class AAOFolder;
 @class AAOStore;
 @interface AAOItem : NSObject
 @property (nonatomic, strong) NSUUID *uuid;
-@property (nonatomic, strong, readonly) NSString *name;
+@property (nonatomic, strong) NSString *name;
 @property (nonatomic, weak) AAOStore *store;
 @property (nonatomic, weak) AAOFolder *parent;
 @property (nonatomic, strong, readonly) NSArray<NSUUID *> *uuidPath;

@@ -10,14 +10,16 @@
 #import "AAORecording.h"
 #import "AAOStore.h"
 
-static NSString *AAOFolderKeyContents = @"contents";
-static NSString *AAOFolderKeyType = @"type";
-static NSString *AAOFolderKeyTypeFolder = @"folder";
-static NSString *AAOFolderKeyTypeRecording = @"recording";
-
 @implementation AAOFolder
 
-- (instancetype)initWithName:(NSString *)name uuid:(NSUUID *)uuid {
+- (instancetype)init {
+    if (self=[self initWithName:nil uuid:nil]) {
+        
+    }
+    return self;
+}
+
+- (instancetype)initWithName:(NSString *)name uuid:(NSString *)uuid {
     if (self=[super initWithName:name uuid:uuid]) {
         _contents = [@[] mutableCopy];
     }
@@ -47,8 +49,9 @@ static NSString *AAOFolderKeyTypeRecording = @"recording";
 
 - (NSDictionary *)encodeToDictionay {
     NSMutableDictionary *dict = [@{} mutableCopy];
+    [dict setValue:AAOFolderKeyTypeFolder forKey:AAOFolderKeyType];
     [dict setValue:self.name forKey:AAOFolderKeyName];
-    [dict setValue:self.uuid forKey:AAOFolderKeyUUID];
+    [dict setValue:self.uuid.UUIDString forKey:AAOFolderKeyUUID];
     NSMutableArray *tempArray = [@[] mutableCopy];
     [self.contents enumerateObjectsUsingBlock:^(AAOItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [tempArray addObject:[obj encodeToDictionay]];

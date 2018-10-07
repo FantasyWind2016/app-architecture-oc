@@ -12,7 +12,9 @@ static NSString * const AAOStoreChangeNotification = @"StoreChanged";
 
 @class AAORecording;
 @class AAOItem;
+@class AAOFolder;
 @interface AAOStore : NSObject
+@property (nonatomic, strong) AAOFolder *rootFolder;
 + (instancetype)shared;
 
 - (NSURL *)fileURLForRecording:(AAORecording *)recording;
